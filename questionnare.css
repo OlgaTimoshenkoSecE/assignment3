@@ -1,20 +1,111 @@
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
     background-image: linear-gradient(90deg, darkorchid, 60%, yellow);
     background-attachment: fixed;
 }
-#navbar{
-    position:sticky;
+nav{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:fixed;
     background: white;
+    margin: 0em 1em;
     width: 90%;
     border-radius: 25px;
     font-size: 1.5em;
-    margin: auto;
     padding: 1.5em 1em;
+    box-shadow: 0.2em 0.2em 1em ;
+    border: 0.1em solid yellow; 
+    font-weight: 700;
 }
 #questionProgress{
     float: right;
+}
+#blankSpace{
+    height: 9em;
+}
+.question{
+    margin: 7em 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.word{
+    border: 0.2em solid purple;
+    margin-top: 0.3em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em 0em;
+    background-color: white;
+}
+.definition{
+    border: 0.2em solid purple;
+    margin: 1em 0em;
+    padding: 0.4em 1em;
+    background-color: darkgray;
+    color: rgb(52, 52, 52);
+    border-radius: 60px;
+    text-align: center;
+    font-weight: 500;
+}
+.definition:hover{
+    background-color: white;
+}
+.answer{
+    display: none;
+}
+#buttons{
+    text-align: center;
+}
+button{
+    background-color:darkmagenta;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px;
+    width: 5em;
+    padding: 0.3em;
+    margin-bottom: 3em;
+    font-size: 3em;
+}
+#answerSheet{
+    border: 0.3em solid black;
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    margin: 10% 0 2em 3em;
+    display: none;
+    margin-bottom: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+    nav{
+        width: 75%;
+        margin: 0em 2em;
+    }
+}
+@media only screen and (max-width: 424px){
+    nav{
+        margin: 0em;
+        font-size: 0.7em;
+        border-radius: 30px;
+    }
 }
