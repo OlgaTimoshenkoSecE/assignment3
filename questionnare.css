@@ -1,0 +1,151 @@
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+body{
+    background-image: linear-gradient(90deg, darkorchid, 60%, yellow);
+    background-attachment: fixed;
+}
+#main-name{
+    background-color:white;
+    text-align: justify;
+    font-size: 90;
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    letter-spacing: 0.4em;
+    text-align-last: right;
+    box-sizing: border-box;
+}
+span{
+    color:darkorchid;
+    letter-spacing: 0.7em;
+    overflow-wrap: break-word;
+}
+
+#name-description{
+    width: 70%;
+    margin: 0.5em auto;
+    font-size: 60;
+    text-align: center;
+    
+}
+#arrow{
+    margin-top: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+#article-text{
+    border: 0.1em solid black;
+    margin: 2em auto;
+    font-size: 30;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    width: 60%;
+}
+input, select{
+    font-family: 'Times New Roman', Times, serif;
+}
+form{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding-top: 1em;
+}
+div{
+    margin: 1em 0em;
+    height: 2em;
+    font-size: 30;
+}
+input, select{
+    width: 60%;
+    height: 3em;
+    text-align: center;
+    float: right;
+    border-radius: 25em;
+    border: 2px solid black;
+    background-color: rgb(203, 203, 203);
+    outline: none;
+}
+button{
+    width: 100%;
+    height: 2em;
+    margin: 1em auto;
+    font-size: 30;
+    border-radius: 30px;
+    background-color: purple;
+    border: none;
+    color: white;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 1px black;
+    box-shadow: 2px 2px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+    #main-name, span{
+        letter-spacing: 0.3em;
+        overflow-wrap: break-word;
+        font-size: 70;
+    }
+    #name-description{
+        font-size: 40;
+        width: 95%;
+        margin: 0.5em auto;
+    }
+    #arrow{
+        margin-top: 0.5em;
+        width: 3em;
+        height: 3em;
+    }
+}
+@media only screen and (max-width: 424px){
+    #main-name, span{
+        letter-spacing: 0.1em;
+        overflow-wrap: break-word;
+        font-size: 50;
+    }
+    #name-description{
+        font-size: 35;
+        margin: 0.5em auto;
+        width: 95%;
+    }
+    #arrow{
+        margin-top: 1em;
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
