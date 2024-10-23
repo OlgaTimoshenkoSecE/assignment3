@@ -3,7 +3,7 @@
         <title>
             quiz
         </title>
-        <link rel="stylesheet" type="text/css" href="questionnare.css">
+        <link rel="stylesheet" type="text/css" href="mainpage.css">
     </head>
     <body>
         <p id="main-name">ENGLISH<br><span>PROFICIENCY</span><br>TEST</p>
@@ -11,7 +11,7 @@
             to find out if you have an outstanding English level proficiency! <br>
         <img id="arrow" src="arrow.svg"></p>
         <p id="article-text">Fill out this form to begin: </p>
-        <form autocomplete="off">
+        <form autocomplete="off" action="questionnare.html" method="GET">
             <div class="name">
                 <label for="name">Name: </label>
                 <input type="text" id="name" required>
@@ -24,11 +24,24 @@
                     <option>under 18</option>
                     <option>18-25</option>
                     <option>26-50</option>
-                    <option>51+</option>
+                    <option">51+</option>
                 </select>
             </div>
-            <button>Submit</button>
+            <a href="questionnare.html"><button>Submit</button></a>
         </form>
-        <script src="questionnare.js"></script>
+        <script>
+            document.getElementById("name").onfocus = function(event){
+                event.target.style.background = "white";
+            }
+            document.getElementById("age").onfocus = function(event){
+                event.target.style.background = "white";
+            }
+            document.getElementById("name").onblur = function(event){
+                event.target.style.background = "rgb(203, 203, 203)";
+            }
+            document.getElementById("age").onblur = function(event){
+                event.target.style.background = "rgb(203, 203, 203)";
+            }
+        </script>
     </body>
 </html>
