@@ -39,8 +39,8 @@
         <article class="question">
             <section class="word">6. aghast (adjective)</section>
             <button class="definition" onclick="answerSelector(event)" value="wrong">feeling some emotion so strongly that you cannot think clearly <span class="answer"> - overwhelmed by something</span></button>
-            <button class="definition" onclick="answerSelector(event)" value="right">in a way that deals with or treats the whole of something or someone and not just a part <span class="answer"> - holistically</span></button>
-            <button class="definition" onclick="answerSelector(event)" value="wrong">feeling or looking shocked by something you have seen or just found out</button>
+            <button class="definition" onclick="answerSelector(event)" value="wrong">in a way that deals with or treats the whole of something or someone and not just a part <span class="answer"> - holistically</span></button>
+            <button class="definition" onclick="answerSelector(event)" value="right">feeling or looking shocked by something you have seen or just found out</button>
         </article>
         <article class="question">
             <section class="word">7. to revel (verb)</section>
@@ -69,7 +69,14 @@
         <section id="buttons">
             <button type="button" id="submission" onclick="displayResult()">submit</button>
         </section>
-        <button id="answerSheet"></button>
+        <section id="answerSheet">
+            <p id="firstLine">Here are the results!</p>
+            <p>Your score: <span id="resultDisplay">0</span>/10</p>
+            <p id="comment">comment</p>
+            <p>Take another look at the questions above - <br>
+            all definitions are on display!</p>
+            <a href="mainpage.html"><button id="returnButton">return to the main page</button></a>
+        </section>
         <script src="questionnare.js"></script>
     </body>
 </html>

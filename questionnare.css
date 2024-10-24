@@ -6,7 +6,7 @@ body{
     background-image: linear-gradient(90deg, darkorchid, 60%, yellow);
     background-attachment: fixed;
 }
-nav{
+#navbar{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position:fixed;
     background: white;
@@ -41,10 +41,11 @@ nav{
     background-color: white;
 }
 .definition{
-    border: 0.2em solid purple;
+    border: 0.2em solid;
+    border-color: purple;
     margin: 1em 5%;
-    padding: 0.7em 1em;
-    background: darkgray;
+    padding: 1em 1em;
+    background:darkgrey;
     color: rgb(52, 52, 52);
     border-radius: 60px;
     text-align: center;
@@ -53,10 +54,12 @@ nav{
     font-size: 0.8em;
 }
 .definition:hover{
-    background-color: white;
+    background: white;
 }
 .answer{
     display: none;
+    color: white;
+    font-weight: 900;
 }
 #buttons{
     text-align: center;
@@ -66,7 +69,7 @@ nav{
     background-color:darkmagenta;
     color: white;
     border: 1px solid black;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 5px black;
     width: 5em;
     padding: 0.3em;
     margin-bottom: 3em;
@@ -75,40 +78,46 @@ nav{
 #answerSheet{
     border: 0.3em solid black;
     background-color: white;
-    height: 90%;
     width: 90%;
-    margin: 10% 0 2em 3em;
+    margin: 0em 5% 5em 5%;
     display: none;
     margin-bottom: 5em;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+#returnButton{
+    background-color:darkmagenta;
+    color: white;
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+#returnButton:active{
+    background-color: black;
+}
+p, #returnButton, #resultDisplay{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#firstLine{
+    margin-top: 0.1em; 
+    margin-bottom: 1.5em;
+}
+#comment{
+    margin: 2em 0em;
+}
 @media only screen and (max-width: 768px) and (min-width: 425px){
-    nav{
+    #navbar{
         width: 75%;
         margin: 0em 2em;
     }
 }
 @media only screen and (max-width: 424px){
-    nav{
+    #navbar{
         margin: 0em;
         font-size: 0.7em;
         border-radius: 30px;

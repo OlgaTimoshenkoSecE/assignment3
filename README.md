@@ -14,3 +14,10 @@
  3 step - reset counter for correct answers if the user was right.
  4 step - make a loop which will iterate over all buttons of the targeted question
  5 step - change buttons attributes 
+5) I ended up adding counter for correct answers and commantary change inside the aforementioned function too (4); it didn't run the other way
+6) there is a problem which keeps appearing inside console - some style property is not defined; i checked all document.style, but still cannot figure out where this error keeps coming from
+7) i figured out the problem in (6) - my loop was iterating more than needed, so for this last iteration it didn't recieve anythig, therefore there was no 'style' attribute
+
+8) throughout the project i added media queries for some tag
+
+9) did final desk check
